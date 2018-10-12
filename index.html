@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Running Events</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="title" class="primary">Title</label>
+          <input type="text" id="title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="location" class="primary">Location</label>
+          <input type="text" id="location" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class="primary">Category</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="5k">5k</option>
+            <option value="10k">10k</option>
+            <option value="half">Half Marathon</option>
+            <option value="full">Full Marathon</option>
+            <option value="ultra">Ultra MArathon</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>List of Running Events</h1>
+    <div id="running-list"></div>
+    <input type="button" id="deleteAll" value="Delete All">
+  </body>
+</html>
