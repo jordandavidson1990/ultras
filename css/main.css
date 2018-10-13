@@ -71,6 +71,8 @@ table {
     text-align:justify;
     border: 5px #5D5E60 solid;
     background-color:  #333;
+    padding-bottom: 20px;
+    border-style: ridge;
     /* border-style: groove; */
     /* border-color: moccasin; */
     /* border-width: thick; */
