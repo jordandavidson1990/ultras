@@ -113,3 +113,8 @@ table {
   font-style: oblique;
   margin-bottom: 10px;
 }
+.img{
+  width: 80%;
+  display: flex;
+  border: 5px solid #D4AA7D;
+}
