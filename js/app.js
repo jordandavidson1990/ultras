@@ -1,16 +1,16 @@
 const addItem = function(title, location, category, experience){
-  const wrapper = document.createElement("div")
+  const wrapper = document.createElement("TABLE")
 
-  const titleElement = document.createElement('h2')
+  const titleElement = document.createElement('TABLE')
   titleElement.textContent = title;
 
-  const locationElement = document.createElement('h3')
+  const locationElement = document.createElement('TABLE')
   locationElement.textContent = location;
 
-  const categoryElement = document.createElement('h3')
+  const categoryElement = document.createElement('TABLE')
   categoryElement.textContent = category;
 
-  const experienceElement = document.createElement('h3')
+  const experienceElement = document.createElement('TABLE')
   experienceElement.textContent = experience;
 
 
@@ -26,10 +26,10 @@ const addItem = function(title, location, category, experience){
 const handleFormSubmit = function(event){
   event.preventDefault();
   // console.log(event)
-  const title = event.target.title.value;
-  const location = event.target.location.value;
-  const category = event.target.category.value;
-  const experienceLvl = getExperienceLevel();
+  const title = `Title: ${event.target.title.value}`;
+  const location = `Location: ${event.target.location.value}`;
+  const category = `Category: ${event.target.category.value}`;
+  const experienceLvl = `Experience Level: ${getExperienceLevel()}`;
 
 
   addItem(title, location, category, experienceLvl);
@@ -37,6 +37,7 @@ const handleFormSubmit = function(event){
   const form = event.target;
   form.reset();
 };
+// let x = document.createElement("TAble")
 
 let getExperienceLevel = function(){
   let experience;

@@ -8,21 +8,24 @@
   <script src="js/app.js"></script>
 </head>
 <body>
-  <form id="new-item-form">
-    <div id="form-wrapper">
-      <div class="form-item">
+  <div class="container">
+    <h1>Enter Your Race</h1>
+    <form id="new-item-form">
+      <div
+      id="form-wrapper">
+      <div class="form-item title">
         <label for="title" class="primary">Title</label>
-        <input type="text" id="title" required/>
+        <input class="form-control" type="text" id="title" required/>
       </div>
 
-      <div class="form-item">
+      <div class="form-item location">
         <label for="location" class="primary">Location</label>
-        <input type="text" id="location" required/>
+        <input class="form-control" type="text" id="location" required/>
       </div>
 
-      <div class="form-item">
+      <div class="form-item category">
         <label for="category" class="primary">Category</label>
-        <select id="category">
+        <select class="form-control"id="category">
           <option value="" disabled selected></option>
           <option value="5k">5k</option>
           <option value="10k">10k</option>
@@ -32,23 +35,28 @@
         </select>
       </div>
 
+      <!-- <p>Have you run this race before?</p> -->
+      <div class = "form-experience location" id="form-experience">
         <p>Have you run this race before?</p>
-        <div id="form-experience">
-          <input type="radio" id="experience"
-          name="Run Before" value="Run Before">
-          <label for="Previous Experience">Previously Ran</label>
-          <input type="radio" id="never"
-          name="Never Ran" value="Not Ran Yet">
-          <label for="Never This Race">Never Ran Before</label>
-        </div>
-    
-    </div>
-  </div>
-  <input type="submit" value="save"/>
-</form>
+        <input type="radio" id="experience"
+        name="Run Before" value="Run Before">
+        <label for="Previous Experience">Previously Ran</label>
+        <input type="radio" id="never"
+        name="Never Ran" value="Not Ran Yet">
+        <label for="Never This Race">Never Ran Before</label>
+      </div>
 
-<h1>List of Running Events</h1>
-<div id="running-list"></div>
-<input type="button" id="deleteAll" value="Delete All">
+    </div>
+
+    <input class = "btn box" type="submit" value="save"/>
+  </form>
+
+
+  <h2>List of Running Events</h2>
+  <div id="running-list" >
+
+  </div>
+  <input class ="btn box" type="button" id="deleteAll" value="Delete All">
+</div>
 </body>
 </html>

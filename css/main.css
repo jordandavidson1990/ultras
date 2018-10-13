@@ -1,12 +1,113 @@
 h1,h2,h3,h4,h5,h6{
   font-family: 'Playfair Display', serif;
 }
-h1 {
+h1, h2 {
   font-size: 40px;
+  display:flex;
+  justify-content: center;
 }
 
 body
-{font-family: 'Open Sans', sans-serif;
-background-color: #2e303e;
-color: beige;
-margin-left: 10pt}
+{
+  font-family: 'Playfair Display', sans-serif;
+  background-color: #36413E;
+  color: beige;
+  margin-left: 10pt;
+  font-size: 20px;
+}
+
+/* .box{
+  display: flex;
+  justify-content: space-between;
+} */
+.container{
+  width: 80%;
+  margin: auto;
+  /* display: flex; */
+  justify-content: center;
+}
+.form-item{
+  background-color:  #333;
+  border: auto;
+  /* border-top-style: dotted */
+  border: 5px #5D5E60 solid;
+  padding: 20px;
+}
+.form-experience{
+  background-color:  #333;
+  border: auto;
+  /* border-top-style: dotted */
+  border: 5px #5D5E60 solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.btn{
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-style: oblique;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s;
+  cursor: pointer;
+  margin-top: 20px
+}
+.btn:hover {
+      background-color: #D4AA7D;
+    color: beige;
+    }
+
+table {
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    /* border-collapse: collapse; */
+    text-align:justify;
+    border: 5px #5D5E60 solid;
+    background-color:  #333;
+    /* border-style: groove; */
+    /* border-color: moccasin; */
+    /* border-width: thick; */
+    /* border-bottom: 20px; */
+  }
+
+  .location{
+    background: #D4AA7D;
+    float:inherit;
+    display: block;
+    color: black;
+    font-weight: 400;
+    font-style: oblique;
+  }
+
+  .experience{
+    background: blue;
+  }
+
+  .form-control {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  padding: 10pt;
+  font-size: 15pt;
+  line-height: 10pt;
+  color: #363b38;
+  margin: 20px;
+  background-color: beige;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  border-radius: 10pt
+}
+.form-item{
+  font-size: 20px;
+  font-style: oblique;
+  margin-bottom: 10px;
+}
